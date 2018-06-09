@@ -29,9 +29,9 @@ public class AppUI extends Application {
         fieldPalavra.setTooltip(new Tooltip("Digite uma palavra"));
         fieldPalavra.textProperty().addListener((observable, oldValue, newValue) -> {
             try {
+                labelResultado.setText("");
                 String palavrasPermitidas = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
                 if (!palavrasPermitidas.contains(String.valueOf(newValue.toCharArray()[newValue.length() - 1]))) {
-                    labelResultado.setText("");
                     fieldPalavra.setText(oldValue);
                 }
             } catch (Exception ignored) {
