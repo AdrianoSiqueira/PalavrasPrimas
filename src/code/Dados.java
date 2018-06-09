@@ -1,44 +1,35 @@
 package code;
 
-@SuppressWarnings({"unused", "WeakerAccess"})
-public class Dados {
+class Dados {
 
     private String palavra;
     private int soma;
     private boolean primo;
 
-    public Dados() {
+    Dados() {
     }
 
-    public Dados(String palavra, int soma, boolean primo) {
-
-        this.palavra = palavra;
-        this.soma = soma;
-        this.primo = primo;
+    String formatarResultado() {
+        return palavra + " " + (primo ? "é" : "não é") + " uma palavra prima";
     }
 
-    public String getPalavra() {
-
+    String getPalavra() {
         return palavra;
     }
 
-    public void setPalavra(String palavra) {
+    void setPalavra(String palavra) {
         this.palavra = palavra;
     }
 
-    public int getSoma() {
+    int getSoma() {
         return soma;
     }
 
-    public void setSoma(int soma) {
+    void setSoma(int soma) {
         this.soma = soma;
     }
 
-    public boolean isPrimo() {
-        return primo;
-    }
-
-    public void setPrimo(boolean primo) {
+    void setPrimo(boolean primo) {
         this.primo = primo;
     }
 }

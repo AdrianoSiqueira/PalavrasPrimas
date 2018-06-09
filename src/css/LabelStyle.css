@@ -1,0 +1,5 @@
+.label {
+    -fx-font: normal bold 50px "Liberation Serif";
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-wrap-text: true;
+}

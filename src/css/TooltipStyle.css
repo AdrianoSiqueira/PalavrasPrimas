@@ -1,0 +1,11 @@
+.tooltip {
+    -fx-font: normal normal 20px "Liberation Sans";
+    -fx-text-fill: rgb(255, 255, 255);
+
+    -fx-background-color: rgb(0, 0, 0);
+    -fx-background-radius: 20;
+
+    -fx-border-color: rgb(0, 0, 0);
+    -fx-border-radius: 20;
+    -fx-border-style: solid;
+}
