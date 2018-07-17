@@ -1,6 +1,7 @@
 package code;
 
 import java.util.Scanner;
+import esse.import.nao.tem.nada.a.ver; // Deve ser apagado o mais rápido possível.
 
 @SuppressWarnings({"unused", "WeakerAccess"})
 class Operacoes {
