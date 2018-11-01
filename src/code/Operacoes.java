@@ -6,31 +6,23 @@ import java.util.Scanner;
 class Operacoes {
 
     /**
-     * <p>Verifica se determinado número é primo.</p>
+     * <p> Verifica se determinado número é primo. </p>
      *
      * @param numero Número a ser verificado.
      * @return Booleano relativo se é ou não primo.
      */
     public boolean determinarPrimo(int numero) {
-        boolean primo = true;
-
-        for (int i = 2; i < numero; ++i) {
-            if (numero % i == 0) {
-                primo = false;
-                break;
-            }
-        }
-
-        return primo;
+        for (int i = 2; i < numero; ++i) if (numero % i == 0) return false;
+        return true;
     }
 
     /**
-     * <p>Detecta o sistema operacional e limpa a tela do terminal.</p>
+     * <p> Detecta o sistema operacional e limpa a tela do terminal. </p>
      */
     public void limparTela() {
         String comando = null;
-
         String so = System.getProperty("os.name").toLowerCase();
+        
         if (so.contains("linux")) {
             comando = "clear";
         } else if (so.contains("windows")) {
@@ -47,7 +39,7 @@ class Operacoes {
     }
 
     /**
-     * <p>Pega uma palavra pelo terminal.</p>
+     * <p> Pega uma palavra pelo terminal. </p>
      *
      * @return Palavra digitada sem espaços.
      */
@@ -61,7 +53,7 @@ class Operacoes {
     }
 
     /**
-     * <p>Exibe o resultado de forma amigável.</p>
+     * <p> Exibe o resultado de forma amigável. </p>
      *
      * @param dados Objeto com as informações.
      */
@@ -73,9 +65,9 @@ class Operacoes {
     }
 
     /**
-     * <p>Realiza a soma aplicando as regras do desafio.</p>
-     * <p>Letras minúsculas [1-26]</p>
-     * <p>Letras maiúsculas [27-52]</p>
+     * <p> Realiza a soma aplicando as regras do desafio. </p>
+     * <p> Letras minúsculas [1-26] </p>
+     * <p> Letras maiúsculas [27-52] </p>
      *
      * @param palavra Palavra a ser processada.
      * @return Soma da palavra.
